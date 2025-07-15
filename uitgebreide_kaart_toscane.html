@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_33a631e481b7c7fd8f647233d68089b6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_33a631e481b7c7fd8f647233d68089b6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_33a631e481b7c7fd8f647233d68089b6 = L.map(
+                "map_33a631e481b7c7fd8f647233d68089b6",
+                {
+                    center: [43.765, 10.905],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 9,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_e43da2e66d5634bacc992542e9ca8cf8 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_33a631e481b7c7fd8f647233d68089b6);
+        
+    
+            var marker_cluster_6232bc63cca527a8ed711cd92dfe9c3c = L.markerClusterGroup(
+                {}
+            );
+            map_33a631e481b7c7fd8f647233d68089b6.addLayer(marker_cluster_6232bc63cca527a8ed711cd92dfe9c3c);
+        
+    
+            var marker_1218a3aa115f67c2cb14eed87f3df2e8 = L.marker(
+                [43.7551, 10.8897],
+                {}
+            ).addTo(marker_cluster_6232bc63cca527a8ed711cd92dfe9c3c);
+        
+    
+            var icon_850b2f6adee1feb641c6778ba113c0ec = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1218a3aa115f67c2cb14eed87f3df2e8.setIcon(icon_850b2f6adee1feb641c6778ba113c0ec);
+        
+    
+        var popup_8cd98ba4852cf13a66f9a512f948b3e4 = L.popup({"maxWidth": 350});
+
+        
+            var html_575f30e03b20ac36f3ef10daf2c021a5 = $(`<div id="html_575f30e03b20ac36f3ef10daf2c021a5" style="width: 100.0%; height: 100.0%;">         <b>Villa Medicea di Cerreto Guidi</b><br>         📍 Via dei Ponti Medicei 7, 50050 Cerreto Guidi (FI)<br>         🏰 Historische Medici-villa en jachtmuseum (UNESCO).<br>         ⏰ Di–zo: 8:15–19:00 | Maandag gesloten<br>         💶 Gratis toegang<br>         🔗 <a href='https://www.visittuscany.com/en/attractions/medici-villa-in-cerreto-guidi/' target='_blank'>Meer info</a>         </div>`)[0];
+            popup_8cd98ba4852cf13a66f9a512f948b3e4.setContent(html_575f30e03b20ac36f3ef10daf2c021a5);
+        
+
+        marker_1218a3aa115f67c2cb14eed87f3df2e8.bindPopup(popup_8cd98ba4852cf13a66f9a512f948b3e4)
+        ;
+
+        
+    
+    
+            var marker_c085c24e55a67719f3f5d1ebc3544cca = L.marker(
+                [43.7795, 10.9226],
+                {}
+            ).addTo(marker_cluster_6232bc63cca527a8ed711cd92dfe9c3c);
+        
+    
+            var icon_a4a8ad3dc322b725d59f28f124c6396d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c085c24e55a67719f3f5d1ebc3544cca.setIcon(icon_a4a8ad3dc322b725d59f28f124c6396d);
+        
+    
+        var popup_db1ac2fef8b3fa744920b649183e30fc = L.popup({"maxWidth": 350});
+
+        
+            var html_66b001b5f0ee90237febf3dbb4a58e87 = $(`<div id="html_66b001b5f0ee90237febf3dbb4a58e87" style="width: 100.0%; height: 100.0%;">         <b>Museo Leonardiano</b><br>         📍 Piazza dei Conti Guidi 1, 50059 Vinci (FI)<br>         🧠 Museum over Leonardo’s uitvindingen.<br>         ⏰ 1 apr–1 nov: 10:00–19:00 | 6 nov–28 feb: ma–vr 10:00–16:30, za–zo 10:00–17:00<br>         💶 €10 (volw.), €8 (reductie), combi: €13<br>         🔗 <a href='https://museoleonardiano.it/en/' target='_blank'>Website</a>         </div>`)[0];
+            popup_db1ac2fef8b3fa744920b649183e30fc.setContent(html_66b001b5f0ee90237febf3dbb4a58e87);
+        
+
+        marker_c085c24e55a67719f3f5d1ebc3544cca.bindPopup(popup_db1ac2fef8b3fa744920b649183e30fc)
+        ;
+
+        
+    
+    
+            var marker_28059d247e62e6fd6ab5a47b690464ec = L.marker(
+                [43.7911, 10.9254],
+                {}
+            ).addTo(marker_cluster_6232bc63cca527a8ed711cd92dfe9c3c);
+        
+    
+            var icon_3eb58e6bcbec2c471de90ab487337d83 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_28059d247e62e6fd6ab5a47b690464ec.setIcon(icon_3eb58e6bcbec2c471de90ab487337d83);
+        
+    
+        var popup_014238fe69a10c3517ff06077a882127 = L.popup({"maxWidth": 350});
+
+        
+            var html_da96db2d00deb8d6fe34724013d75511 = $(`<div id="html_da96db2d00deb8d6fe34724013d75511" style="width: 100.0%; height: 100.0%;">         <b>Casa natale di Leonardo</b><br>         📍 Loc. Anchiano, 50059 Vinci (FI)<br>         🏡 Geboortehuis met hologram en expositie.<br>         ⏰ Zelfde tijden als Museo Leonardiano<br>         💶 Alleen: €4, combi: €13 (volw.)<br>         🔗 <a href='https://museoleonardiano.it/en/' target='_blank'>Website</a>         </div>`)[0];
+            popup_014238fe69a10c3517ff06077a882127.setContent(html_da96db2d00deb8d6fe34724013d75511);
+        
+
+        marker_28059d247e62e6fd6ab5a47b690464ec.bindPopup(popup_014238fe69a10c3517ff06077a882127)
+        ;
+
+        
+    
+    
+            var marker_4508118b878f17f16f9eeb9e9cc628bc = L.marker(
+                [43.717, 10.9472],
+                {}
+            ).addTo(marker_cluster_6232bc63cca527a8ed711cd92dfe9c3c);
+        
+    
+            var icon_783eaf3f6574945ae3e8063bf31d32c0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4508118b878f17f16f9eeb9e9cc628bc.setIcon(icon_783eaf3f6574945ae3e8063bf31d32c0);
+        
+    
+        var popup_2d62789760def1a3c2a1670038dfcf28 = L.popup({"maxWidth": 350});
+
+        
+            var html_45f66de7cd5b5e49c6b09497e3150f66 = $(`<div id="html_45f66de7cd5b5e49c6b09497e3150f66" style="width: 100.0%; height: 100.0%;">         <b>Museo del Vetro</b><br>         📍 Via Ridolfi 70, 50053 Empoli (FI)<br>         🧴 Glasmuseum over lokale glasproductie.<br>         ⏰ Di–za: 9:00–13:00 & 16:00–19:00, zo: 16:00–19:00<br>         💶 €3 (volw.), €2 (reductie)<br>         🔗 <a href='https://www.empolimusei.it/' target='_blank'>Website</a>         </div>`)[0];
+            popup_2d62789760def1a3c2a1670038dfcf28.setContent(html_45f66de7cd5b5e49c6b09497e3150f66);
+        
+
+        marker_4508118b878f17f16f9eeb9e9cc628bc.bindPopup(popup_2d62789760def1a3c2a1670038dfcf28)
+        ;
+
+        
+    
+    
+            var marker_6b94ebfba3047add4496cf85e95911f7 = L.marker(
+                [43.7211, 10.8046],
+                {}
+            ).addTo(marker_cluster_6232bc63cca527a8ed711cd92dfe9c3c);
+        
+    
+            var icon_396323fa9074c5565a4df316898e6f32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6b94ebfba3047add4496cf85e95911f7.setIcon(icon_396323fa9074c5565a4df316898e6f32);
+        
+    
+        var popup_c4d44bb6ead111d931b5954f1bd0c3a4 = L.popup({"maxWidth": 350});
+
+        
+            var html_64d174961a0e32286935f2e0e28e19a8 = $(`<div id="html_64d174961a0e32286935f2e0e28e19a8" style="width: 100.0%; height: 100.0%;">         <b>Padule di Fucecchio</b><br>         📍 Via della Pescaia 550, 51036 Larciano (ingang reservaat)<br>         🌿 Grootste binnenlandse moeras van Italië.<br>         ⏰ Vrij toegankelijk; begeleide tours via centrum<br>         💶 Meestal gratis | Tours: €5–10<br>         🔗 <a href='https://www.zoneumidetoscane.it/' target='_blank'>Website</a>         </div>`)[0];
+            popup_c4d44bb6ead111d931b5954f1bd0c3a4.setContent(html_64d174961a0e32286935f2e0e28e19a8);
+        
+
+        marker_6b94ebfba3047add4496cf85e95911f7.bindPopup(popup_c4d44bb6ead111d931b5954f1bd0c3a4)
+        ;
+
+        
+    
+    
+            var marker_9a2a8f858a8853d96785e50a31e00216 = L.marker(
+                [43.6836, 10.8521],
+                {}
+            ).addTo(marker_cluster_6232bc63cca527a8ed711cd92dfe9c3c);
+        
+    
+            var icon_2e79968308d8c597e606555d3dd23a09 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "purple", "prefix": "glyphicon"}
+            );
+            marker_9a2a8f858a8853d96785e50a31e00216.setIcon(icon_2e79968308d8c597e606555d3dd23a09);
+        
+    
+        var popup_9cdf84bf79171057368c2b6afdd5fa3f = L.popup({"maxWidth": 350});
+
+        
+            var html_5ce950eaf96dc741434aa3b51399a834 = $(`<div id="html_5ce950eaf96dc741434aa3b51399a834" style="width: 100.0%; height: 100.0%;">         <b>Rocca di San Miniato</b><br>         📍 Via Conti, 56028 San Miniato (PI)<br>         🏰 Middeleeuwse toren met uitzicht over Val d'Elsa.<br>         ⏰ Dagelijks overdag toegankelijk<br>         💶 Gratis<br>         🔗 <a href='https://www.visittuscany.com/en/destinations/san-miniato/' target='_blank'>Meer info</a>         </div>`)[0];
+            popup_9cdf84bf79171057368c2b6afdd5fa3f.setContent(html_5ce950eaf96dc741434aa3b51399a834);
+        
+
+        marker_9a2a8f858a8853d96785e50a31e00216.bindPopup(popup_9cdf84bf79171057368c2b6afdd5fa3f)
+        ;
+
+        
+    
+    
+            var marker_a6b70be54209a51c1a28d3e03f59a366 = L.marker(
+                [43.842, 10.5021],
+                {}
+            ).addTo(marker_cluster_6232bc63cca527a8ed711cd92dfe9c3c);
+        
+    
+            var icon_870fca932140a33f8c400cbd0197eab2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_a6b70be54209a51c1a28d3e03f59a366.setIcon(icon_870fca932140a33f8c400cbd0197eab2);
+        
+    
+        var popup_b5a5e96e985e97e8c407227586b50769 = L.popup({"maxWidth": 350});
+
+        
+            var html_33740c6e5ac62bee4f5d5e136a10e35d = $(`<div id="html_33740c6e5ac62bee4f5d5e136a10e35d" style="width: 100.0%; height: 100.0%;">         <b>Torre Guinigi</b><br>         📍 Via Sant'Andrea 45, 55100 Lucca<br>         🌳 Toren met bomen bovenop – panoramisch uitzicht.<br>         ⏰ Dagelijks 10:00–18:00<br>         💶 €5 (volw.), €3 (kinderen)<br>         🔗 <a href='https://cultura.comune.lucca.it/' target='_blank'>Website</a>         </div>`)[0];
+            popup_b5a5e96e985e97e8c407227586b50769.setContent(html_33740c6e5ac62bee4f5d5e136a10e35d);
+        
+
+        marker_a6b70be54209a51c1a28d3e03f59a366.bindPopup(popup_b5a5e96e985e97e8c407227586b50769)
+        ;
+
+        
+    
+    
+            var marker_3612544909e743db830ac75bccd0b226 = L.marker(
+                [43.7228, 10.4017],
+                {}
+            ).addTo(marker_cluster_6232bc63cca527a8ed711cd92dfe9c3c);
+        
+    
+            var icon_3756e79e177a4fcf1f3c5159fc1305db = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_3612544909e743db830ac75bccd0b226.setIcon(icon_3756e79e177a4fcf1f3c5159fc1305db);
+        
+    
+        var popup_4d6346506dbf4e1dafd025841d0a1e0e = L.popup({"maxWidth": 350});
+
+        
+            var html_0e5e78dc8ffdb3e032e2cca2b3d63abe = $(`<div id="html_0e5e78dc8ffdb3e032e2cca2b3d63abe" style="width: 100.0%; height: 100.0%;">         <b>De Scheve Toren van Pisa</b><br>         📍 Piazza dei Miracoli, 56126 Pisa (PI)<br>         🏛️ Wereldberoemde toren uit de 12e eeuw.<br>         ⏰ Dagelijks 9:00–20:00<br>         💶 €20 (klim), plein gratis<br>         🔗 <a href='https://www.opapisa.it/' target='_blank'>Website</a>         </div>`)[0];
+            popup_4d6346506dbf4e1dafd025841d0a1e0e.setContent(html_0e5e78dc8ffdb3e032e2cca2b3d63abe);
+        
+
+        marker_3612544909e743db830ac75bccd0b226.bindPopup(popup_4d6346506dbf4e1dafd025841d0a1e0e)
+        ;
+
+        
+    
+    
+            var marker_262ab4d7ac7636f1a1cf6801381a87cd = L.marker(
+                [43.9333, 10.9161],
+                {}
+            ).addTo(marker_cluster_6232bc63cca527a8ed711cd92dfe9c3c);
+        
+    
+            var icon_908411091ee1b9476b5fc4a1b865c98f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "lightblue", "prefix": "glyphicon"}
+            );
+            marker_262ab4d7ac7636f1a1cf6801381a87cd.setIcon(icon_908411091ee1b9476b5fc4a1b865c98f);
+        
+    
+        var popup_dc646e1a47aa49fd282178337c52e553 = L.popup({"maxWidth": 350});
+
+        
+            var html_b30bc7a17bbb13dc5f86da136d153108 = $(`<div id="html_b30bc7a17bbb13dc5f86da136d153108" style="width: 100.0%; height: 100.0%;">         <b>Giardino Botanico di Pistoia</b><br>         📍 Via Bolognese, 51100 Pistoia<br>         🌱 Mooie stadsnatuur met planten en rust.<br>         ⏰ Di–zo: 9:30–18:00<br>         💶 €3<br>         🔗 <a href='https://www.giardinodeisemplici.pistoia.it/' target='_blank'>Website</a>         </div>`)[0];
+            popup_dc646e1a47aa49fd282178337c52e553.setContent(html_b30bc7a17bbb13dc5f86da136d153108);
+        
+
+        marker_262ab4d7ac7636f1a1cf6801381a87cd.bindPopup(popup_dc646e1a47aa49fd282178337c52e553)
+        ;
+
+        
+    
+    
+            var marker_b963c101afad510f56a96e91aef21c74 = L.marker(
+                [43.7678, 11.2556],
+                {}
+            ).addTo(marker_cluster_6232bc63cca527a8ed711cd92dfe9c3c);
+        
+    
+            var icon_18889aa8c21566a9321ca16ce1f4a0de = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkred", "prefix": "glyphicon"}
+            );
+            marker_b963c101afad510f56a96e91aef21c74.setIcon(icon_18889aa8c21566a9321ca16ce1f4a0de);
+        
+    
+        var popup_723e4cd65d085971f29dfc4f8b387d20 = L.popup({"maxWidth": 350});
+
+        
+            var html_b90195ebf8b810853941a6686534a841 = $(`<div id="html_b90195ebf8b810853941a6686534a841" style="width: 100.0%; height: 100.0%;">         <b>Uffizi Galerij</b><br>         📍 Piazzale degli Uffizi 6, 50122 Firenze (FI)<br>         🖼️ Eén van 's werelds bekendste kunstmusea.<br>         ⏰ Di–zo: 8:15–18:30 | Maandag gesloten<br>         💶 €12–25 (afhankelijk van seizoen)<br>         🔗 <a href='https://www.uffizi.it/' target='_blank'>Website</a>         </div>`)[0];
+            popup_723e4cd65d085971f29dfc4f8b387d20.setContent(html_b90195ebf8b810853941a6686534a841);
+        
+
+        marker_b963c101afad510f56a96e91aef21c74.bindPopup(popup_723e4cd65d085971f29dfc4f8b387d20)
+        ;
+
+        
+    
+    
+            var marker_c8c0996a22a7f72038e0b108f41586a5 = L.marker(
+                [43.3188, 11.3308],
+                {}
+            ).addTo(marker_cluster_6232bc63cca527a8ed711cd92dfe9c3c);
+        
+    
+            var icon_f80463d8ffa95bb869f47207f1b83acd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkpurple", "prefix": "glyphicon"}
+            );
+            marker_c8c0996a22a7f72038e0b108f41586a5.setIcon(icon_f80463d8ffa95bb869f47207f1b83acd);
+        
+    
+        var popup_965edc8816ae169d0478be9aa64b90de = L.popup({"maxWidth": 350});
+
+        
+            var html_30734bf2ac31eba73428dea7a5c95b34 = $(`<div id="html_30734bf2ac31eba73428dea7a5c95b34" style="width: 100.0%; height: 100.0%;">         <b>Piazza del Campo</b><br>         📍 Piazza del Campo, 53100 Siena<br>         🏛️ Historisch plein waar Palio wordt gehouden.<br>         ⏰ Altijd toegankelijk<br>         💶 Gratis (museum of toren: €10–15)<br>         🔗 <a href='https://www.visittuscany.com/en/attractions/piazza-del-campo-in-siena/' target='_blank'>Meer info</a>         </div>`)[0];
+            popup_965edc8816ae169d0478be9aa64b90de.setContent(html_30734bf2ac31eba73428dea7a5c95b34);
+        
+
+        marker_c8c0996a22a7f72038e0b108f41586a5.bindPopup(popup_965edc8816ae169d0478be9aa64b90de)
+        ;
+
+        
+    
+    
+            var marker_9952176bafc8618690c508088eb9506b = L.marker(
+                [43.4675, 11.0422],
+                {}
+            ).addTo(marker_cluster_6232bc63cca527a8ed711cd92dfe9c3c);
+        
+    
+            var icon_87c24787f84ed5c54c0dc60cd1a4f93f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "darkgreen", "prefix": "glyphicon"}
+            );
+            marker_9952176bafc8618690c508088eb9506b.setIcon(icon_87c24787f84ed5c54c0dc60cd1a4f93f);
+        
+    
+        var popup_3da64f633b0cd60362d5b53795346b82 = L.popup({"maxWidth": 350});
+
+        
+            var html_23af154d0646e3798effb15903d0780c = $(`<div id="html_23af154d0646e3798effb15903d0780c" style="width: 100.0%; height: 100.0%;">         <b>San Gimignano Torens</b><br>         📍 Centro storico, 53037 San Gimignano<br>         🏰 Middeleeuwse torens in UNESCO-stadje.<br>         ⏰ Dagelijks 9:00–19:00 (varieert per seizoen)<br>         💶 Toren: €7<br>         🔗 <a href='https://www.sangimignano.com/' target='_blank'>Website</a>         </div>`)[0];
+            popup_3da64f633b0cd60362d5b53795346b82.setContent(html_23af154d0646e3798effb15903d0780c);
+        
+
+        marker_9952176bafc8618690c508088eb9506b.bindPopup(popup_3da64f633b0cd60362d5b53795346b82)
+        ;
+
+        
+    
+    
+            var marker_da6fe79b3dffc4d8642bd55371c3b735 = L.marker(
+                [43.4016, 10.8647],
+                {}
+            ).addTo(marker_cluster_6232bc63cca527a8ed711cd92dfe9c3c);
+        
+    
+            var icon_6c88693f88f7aaa3ee7f3275f85541da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "cadetblue", "prefix": "glyphicon"}
+            );
+            marker_da6fe79b3dffc4d8642bd55371c3b735.setIcon(icon_6c88693f88f7aaa3ee7f3275f85541da);
+        
+    
+        var popup_db0e1a3b21cca642d557d6137c27ecf9 = L.popup({"maxWidth": 350});
+
+        
+            var html_86c41d1569d775d97f7d05a55bdeea42 = $(`<div id="html_86c41d1569d775d97f7d05a55bdeea42" style="width: 100.0%; height: 100.0%;">         <b>Palazzo dei Priori</b><br>         📍 Piazza dei Priori, 56048 Volterra (PI)<br>         🏛️ Oudste stadhuis van Toscane.<br>         ⏰ Dagelijks 10:30–17:30<br>         💶 €6<br>         🔗 <a href='https://volterratur.it/' target='_blank'>Website</a>         </div>`)[0];
+            popup_db0e1a3b21cca642d557d6137c27ecf9.setContent(html_86c41d1569d775d97f7d05a55bdeea42);
+        
+
+        marker_da6fe79b3dffc4d8642bd55371c3b735.bindPopup(popup_db0e1a3b21cca642d557d6137c27ecf9)
+        ;
+
+        
+    
+</script>
+</html>
